@@ -330,3 +330,25 @@ function liveDangerously(x?: number | null) {
 }
 
 // Just like other type assertions, this doesn’t change the runtime behavior of your code, so it’s important to only use ! when you know that the value can’t be null or undefined.
+
+/*
+    bigint
+    From ES2020 onwards, there is a primitive in JavaScript used for very large integers, BigInt: 
+*/
+// Creating a bigint via the BigInt function
+const oneHundred: bigint = BigInt(100);
+
+// Creating a BigInt via the literal syntax
+const anotherHundred: bigint = 100n;
+
+/*
+    Symbol
+    There is a primitive in JavaScript used to create a globally unique reference via the function Symbol():
+*/
+const firstName = Symbol("name");
+const secondName = Symbol("name");
+
+// if (firstName === secondName) {
+// This comparison appears to be unintentional because the types 'typeof firstName' and 'typeof secondName' have no overlap.
+// Can't ever happen
+// }
