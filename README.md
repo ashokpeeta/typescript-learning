@@ -1,5 +1,10 @@
 ## Learning on typescript
 
+### Javascript
+
+- when properties are accessed on primitives, Javascript auto-boxes the value into a wrapper object and accesses the property on that object instead
+  - eg: "foo".includes("f") => implicitly creates a String wrapper object and calls String.prototype.includes() on that object
+
 ### Typescript generics
 
 - you can specify a data types for the parameters using the generic types and based on the received parameters typescript can deduce the type
